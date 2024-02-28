@@ -14,16 +14,14 @@ public class Main {
             while (resultSet.next()) {
                 System.out.println(resultSet.getInt("id"));
                 System.out.print("|");
-                System.out.println(resultSet.getString("nombre"));
+                System.out.println(resultSet.getString("name"));
                 System.out.print("|");
-                System.out.println(resultSet.getString("precio"));
+                System.out.println(resultSet.getString("price"));
                 System.out.print("|");
-                System.out.println(resultSet.getString("fecha_registro"));
+                System.out.println(resultSet.getString("registration_date"));
             }
-            } catch (SQLException e){
+        } catch (SQLException e){
                 e.printStackTrace();
-
-            }
         }
     }
-    //sobelo sapo hpta plo plo
+}
