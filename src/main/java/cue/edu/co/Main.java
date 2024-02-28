@@ -9,7 +9,7 @@ public class Main {
         String password = "root123";
         try (Connection connection = DriverManager.getConnection(url, user, password);
              Statement statement =  connection.createStatement();
-             ResultSet resultSet = statement.executeQuery("SELECT * FROM productos");
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM product");
             ) {
             while (resultSet.next()) {
                 System.out.println(resultSet.getInt("id"));

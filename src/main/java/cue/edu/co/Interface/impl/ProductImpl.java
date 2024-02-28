@@ -1,26 +1,22 @@
-package cue.edu.co.Interface;
+package cue.edu.co.Interface.impl;
 
-import cue.edu.co.Singleton.DatabaseConnection;
+import cue.edu.co.Interface.Interface;
 import cue.edu.co.model.Product;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.List;
 
 public class ProductImpl implements Interface<Product> {
 
-    private Connection getConnection() throws SQLException {
-        return DatabaseConnection.getInstance();
-    }
-
     @Override
     public List<Product> list() {
-        return null;
+        Product product = new Product();
+        return product.list();
     }
 
     @Override
     public Product byId(long id) {
-        return null;
+        Product product = new Product();
+        return product.byId((int) id);
     }
 
     @Override
