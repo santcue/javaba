@@ -22,6 +22,8 @@ public class Main {
             }
             } catch (SQLException e){
                 e.printStackTrace();
+
             }
         }
     }
+    //sobelo sapo hpta plo plo
